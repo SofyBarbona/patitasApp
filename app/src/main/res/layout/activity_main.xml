@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoapp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="580dp"
+
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white"
+        android:padding="8pt"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="47pt"
+            android:layout_height="40pt"
+
+            android:layout_gravity="center"
+            android:background="@drawable/loguito" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#BFC6CC"
+
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/Contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#BFC6CC"
+
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <CheckBox
+            android:id="@+id/RecordarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:text="Recordar usuario"/>
+
+        <Button
+            android:id="@+id/IniciarSesion"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ec9c64"
+
+            android:text="Iniciar sesión" />
+
+        <Button
+            android:id="@+id/Registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#664434"
+            android:text="Registrarse"  />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="5pt"
+            android:background="@color/white"
+            android:text="Al continuar, aceptas las condiciones de servicio y la política de privacidad de Patitas."
+            android:textAlignment="center"
+            android:textColor="#757575"
+
+            android:textSize="14dp"
+            tools:ignore="TextSizeCheck"/>
+    </LinearLayout>
+
+
+</LinearLayout>

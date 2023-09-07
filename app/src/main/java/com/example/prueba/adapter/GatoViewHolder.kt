@@ -3,7 +3,7 @@ package com.example.prueba.adapter
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.prueba.Gato.Gato
+import com.example.prueba.gato.Gato
 import com.example.prueba.databinding.ItemGatoBinding
 
 class GatoViewHolder(view: View):RecyclerView.ViewHolder(view) {

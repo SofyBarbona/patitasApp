@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prueba.R
-import com.example.prueba.Refugio.Refugio
+import com.example.prueba.refugio.Refugio
 
 class RefugioAdapter(
     private val listaRefugios:List<Refugio>,

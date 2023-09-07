@@ -1,4 +1,4 @@
-package com.example.prueba.Refugio
+package com.example.prueba.refugio
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prueba.R
-import com.example.prueba.Gato.VerLista
+import com.example.prueba.gato.VerLista
 import com.example.prueba.adapter.RefugioAdapter
 import com.example.prueba.databinding.ActivityVerListaRefugiosBinding
 
@@ -35,7 +35,7 @@ class VerListaRefugios : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
+        menuInflater.inflate(R.menu.menu_lista_refugios, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

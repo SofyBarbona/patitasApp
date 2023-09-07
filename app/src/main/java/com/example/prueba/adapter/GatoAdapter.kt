@@ -3,7 +3,7 @@ package com.example.prueba.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.prueba.Gato.Gato
+import com.example.prueba.gato.Gato
 import com.example.prueba.R
 
 class GatoAdapter(

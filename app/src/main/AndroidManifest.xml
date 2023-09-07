@@ -15,10 +15,10 @@
         android:theme="@style/Base.Theme.patitasApp"
         tools:targetApi="31">
         <activity
-            android:name=".Refugio.FichaRefugio"
+            android:name=".refugio.FichaRefugio"
             android:exported="false" />
         <activity
-            android:name=".Refugio.VerListaRefugios"
+            android:name=".refugio.VerListaRefugios"
             android:exported="false" />
         <activity
             android:name=".TerminosYCondiciones"
@@ -30,10 +30,10 @@
             android:name=".Registro"
             android:exported="true" />
         <activity
-            android:name=".Gato.Ficha"
+            android:name=".gato.Ficha"
             android:exported="true"/>
         <activity
-            android:name=".Gato.VerLista"
+            android:name=".gato.VerLista"
             android:exported="true"/>
         <activity
             android:name=".MainActivity"

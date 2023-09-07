@@ -90,5 +90,11 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="sp_credenciales">SP_CREDENCIALES</string>
     <string name="nombre_usuario">NOMBRE</string>
     <string name="password_usuario">PASSWORD</string>
+    <string name="volver">volver</string>
+    <string name="gato">Gato</string>
+    <string name="pRaza">Raza:</string>
+    <string name="pEdad">Edad:</string>
+    <string name="pSexo">Sexo:</string>
+
 
 </resources>

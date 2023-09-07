@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
-import com.example.prueba.Gato.VerLista
+import com.example.prueba.gato.VerLista
 
 class MainActivity : AppCompatActivity() {
     private lateinit var etEmail: EditText

@@ -1,4 +1,4 @@
-package com.example.prueba.Gato
+package com.example.prueba.gato
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prueba.R
-import com.example.prueba.Refugio.VerListaRefugios
+import com.example.prueba.refugio.VerListaRefugios
 import com.example.prueba.adapter.GatoAdapter
 import com.example.prueba.databinding.ActivityVerListaBinding
 
@@ -36,7 +36,7 @@ class VerLista : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
+        menuInflater.inflate(R.menu.menu_lista_gatos, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -75,5 +75,7 @@ class VerLista : AppCompatActivity() {
     private fun onItemSelected(gato: Gato){
         Toast.makeText(this,gato.nombre, Toast.LENGTH_SHORT).show()
     }
+
+
 
 }

@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.Refugio
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.prueba.R
+import com.example.prueba.Gato.VerLista
 import com.example.prueba.adapter.RefugioAdapter
 import com.example.prueba.databinding.ActivityVerListaRefugiosBinding
 
@@ -26,7 +28,8 @@ class VerListaRefugios : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
 
         setSupportActionBar(toolbar)
-        supportActionBar!!.title = resources.getString(R.string.app_name)
+        supportActionBar!!.title = resources.getString(R.string.refugios)
+        supportActionBar!!.setIcon(R.drawable.loguitito)
 
         initRecyclerView()
     }
@@ -38,7 +41,7 @@ class VerListaRefugios : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.item_listado){
-            val intentListadoGatos = Intent(this,VerLista::class.java)
+            val intentListadoGatos = Intent(this, VerLista::class.java)
             startActivity(intentListadoGatos)
         }
 
@@ -58,7 +61,7 @@ class VerListaRefugios : AppCompatActivity() {
     }
 
     private fun onItemInformation(refugio: Refugio){
-        val intentFichaRefugio = Intent(this,FichaRefugio::class.java)
+        val intentFichaRefugio = Intent(this, FichaRefugio::class.java)
 
         intentFichaRefugio.putExtra("fotoR",refugio.foto)
         intentFichaRefugio.putExtra("nombreR",refugio.nombre)

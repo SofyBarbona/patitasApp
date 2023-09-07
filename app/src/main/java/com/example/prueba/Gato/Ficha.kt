@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.Gato
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
-import com.example.prueba.adapter.GatoAdapter
-import com.example.prueba.databinding.ActivityVerListaBinding
+import com.example.prueba.R
 
 class Ficha : AppCompatActivity() {
     lateinit var fotoG: ImageView

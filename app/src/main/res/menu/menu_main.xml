@@ -4,11 +4,11 @@
     <item
         android:id="@+id/item_listado"
         android:title="@string/boton_listado"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="never"/>
     <item
         android:id="@+id/item_listado_Refugios"
         android:title="@string/boton_Refugios"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="never"/>
 
 
 </menu>

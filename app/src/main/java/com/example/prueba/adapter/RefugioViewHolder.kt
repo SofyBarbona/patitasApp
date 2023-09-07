@@ -3,7 +3,7 @@ package com.example.prueba.adapter
 import android.view.View
 import com.bumptech.glide.Glide
 import androidx.recyclerview.widget.RecyclerView
-import com.example.prueba.Refugio
+import com.example.prueba.Refugio.Refugio
 import com.example.prueba.databinding.ItemRefugioBinding
 
 class RefugioViewHolder(view: View):RecyclerView.ViewHolder(view) {

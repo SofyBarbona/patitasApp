@@ -3,15 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gato.VerLista">
+    tools:context=".IngresoApp"
+    android:background="@color/marronClaro">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerGato"
-        android:layout_marginTop="60dp"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/loguito" />
+
 </FrameLayout>

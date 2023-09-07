@@ -6,7 +6,4 @@
         <item name="colorPrimaryDark">#664434</item>
     </style>
 
-    <style name="Theme.patitasApp" parent="Base.Theme.patitasApp" />
-    <style name="Theme.app" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
-
 </resources>

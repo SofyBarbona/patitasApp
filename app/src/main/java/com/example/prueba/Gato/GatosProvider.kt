@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.Gato
 
 class GatosProvider {
     companion object{

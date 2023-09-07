@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.Refugio
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.example.prueba.R
 
 class FichaRefugio : AppCompatActivity() {
     lateinit var fotoR: ImageView

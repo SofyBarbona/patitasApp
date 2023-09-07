@@ -12,13 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.patitasApp"
+        android:theme="@style/Base.Theme.patitasApp"
         tools:targetApi="31">
         <activity
-            android:name=".FichaRefugio"
+            android:name=".Refugio.FichaRefugio"
             android:exported="false" />
         <activity
-            android:name=".VerListaRefugios"
+            android:name=".Refugio.VerListaRefugios"
             android:exported="false" />
         <activity
             android:name=".TerminosYCondiciones"
@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Ficha"
+            android:name=".Gato.Ficha"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".VerLista"
+            android:name=".Gato.VerLista"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,6 +61,15 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IngresoApp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

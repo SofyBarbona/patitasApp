@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.Refugio
 
 class RefugiosProvider {
     companion object{

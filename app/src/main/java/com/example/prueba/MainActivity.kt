@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
+import com.example.prueba.Gato.VerLista
 
 class MainActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         btnIniciarSesion.setOnClickListener {
             var mensaje = "Iniciar sesion"
-            var nombreUsuario = etEmail.text.toString()
+            val nombreUsuario = etEmail.text.toString()
             if(nombreUsuario.isEmpty() || etContra.text.toString().isEmpty()){
                 mensaje+= " - Faltan Datos"
             }else{

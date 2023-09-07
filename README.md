@@ -2,6 +2,6 @@
 Aplicación creada en Android Studio, lenguaje Kotlin
 
 Desarrolladores:
-+ Camila Arista
++ Camila Florencia Garcia
 + Nicolas Irrera
 + Sofia Barbona

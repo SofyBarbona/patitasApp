@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +24,8 @@
             android:layout_height="40pt"
 
             android:layout_gravity="center"
-            android:background="@drawable/loguito" />
+            android:background="@drawable/loguito"
+            android:contentDescription="@string/logo" />
 
         <EditText
             android:id="@+id/Email"
@@ -34,9 +34,10 @@
 
             android:layout_marginVertical="10dp"
             android:background="@drawable/roundstyle"
-            android:backgroundTint="#BFC6CC"
+            android:backgroundTint="@color/gris"
 
-            android:hint="Email"
+            android:autofillHints="emailAddress"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:padding="15dp"/>
 
@@ -46,9 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
             android:background="@drawable/roundstyle"
-            android:backgroundTint="#BFC6CC"
+            android:backgroundTint="@color/gris"
 
-            android:hint="Contraseña"
+            android:autofillHints="password"
+            android:hint="@string/contraseña"
             android:inputType="textPassword"
             android:padding="15dp" />
 
@@ -58,7 +60,7 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:padding="20dp"
-            android:text="Recordar usuario"/>
+            android:text="@string/recordarUsuario"/>
 
         <Button
             android:id="@+id/IniciarSesion"
@@ -68,27 +70,27 @@
 
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#ec9c64"
+            android:backgroundTint="@color/marronClaro"
 
-            android:text="Iniciar sesión" />
+            android:text="@string/iniciarSesion"/>
 
         <Button
             android:id="@+id/Registrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#664434"
-            android:text="Registrarse"  />
+            android:backgroundTint="@color/marronOscuro"
+            android:text="@string/registrarse" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginVertical="5pt"
             android:background="@color/white"
-            android:text="Al continuar, aceptas las condiciones de servicio y la política de privacidad de Patitas."
+            android:text="@string/continuarCondiciones"
             android:textAlignment="center"
-            android:textColor="#757575"
+            android:textColor="@color/grisOscuro"
 
-            android:textSize="14dp"
+            android:textSize="14sp"
             tools:ignore="TextSizeCheck"/>
     </LinearLayout>
 

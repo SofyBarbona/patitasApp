@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class Registro : AppCompatActivity() {
@@ -15,6 +16,7 @@ class Registro : AppCompatActivity() {
     lateinit var edReContra: EditText
     lateinit var btnReRegistrarse: Button
     lateinit var cbAceptar: CheckBox
+    lateinit var tvLeerCondiciones: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +28,13 @@ class Registro : AppCompatActivity() {
         edReContra = findViewById(R.id.reContra)
         btnReRegistrarse = findViewById(R.id.reRegistrarse)
         cbAceptar = findViewById(R.id.reAceptar)
+        tvLeerCondiciones = findViewById(R.id.reLeerCondiciones)
+
+
+        tvLeerCondiciones.setOnClickListener {
+            val intentCondiciones = Intent(this, TerminosYCondiciones::class.java)
+            startActivity(intentCondiciones)
+        }
 
         btnReRegistrarse.setOnClickListener {
             var mensaje = "Registrarse"

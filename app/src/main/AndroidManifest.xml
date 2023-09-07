@@ -15,6 +15,9 @@
         android:theme="@style/Theme.patitasApp"
         tools:targetApi="31">
         <activity
+            android:name=".TerminosYCondiciones"
+            android:exported="false" />
+        <activity
             android:name=".Codigo"
             android:exported="true">
             <intent-filter>

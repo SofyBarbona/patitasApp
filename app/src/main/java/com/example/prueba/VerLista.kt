@@ -28,7 +28,6 @@ class VerLista : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar!!.title = resources.getString(R.string.app_name)
 
-
         initRecyclerView()
     }
 

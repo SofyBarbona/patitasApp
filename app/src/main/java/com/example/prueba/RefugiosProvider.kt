@@ -4,34 +4,46 @@ class RefugiosProvider {
     companion object{
         val listaRefugios = listOf<Refugio>(
             Refugio(
-                "Erza",
-                "Gato común europeo",
-                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg"
+                "Patitas Glew",
+                "Glew",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew"
             ),
             Refugio(
-                "Mini",
-                "Negro",
-                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg"
+                "Callejeros Casa Quiere",
+                "NoInformación",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew"
             ),
             Refugio(
-                "Rey",
-                "Mestizo",
-                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg"
+                "Manejo de Fauna Callejera",
+                "NoInformación",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew"
             ),
             Refugio(
-                "Manteca",
-                "Skookum",
-                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg"
+                "Vida Animal",
+                "Adrogue y Burzaco",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew"
             ),
             Refugio(
-                "Milaneso",
-                "Ural rex",
-                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg"
+                "Adopta Zona Norte",
+                "Zona norte",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew"
             ),
             Refugio(
-                "Choripan",
-                "Mestizo",
-                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg")
+                "Rescates tigre",
+                "Tigre",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew"
+            ),
+            Refugio(
+                "Vernica Esposito",
+                "NoInformación",
+                "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg",
+                "IG: patitasglew")
         )
     }
 }

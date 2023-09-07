@@ -15,6 +15,9 @@
         android:theme="@style/Theme.patitasApp"
         tools:targetApi="31">
         <activity
+            android:name=".FichaRefugio"
+            android:exported="false" />
+        <activity
             android:name=".VerListaRefugios"
             android:exported="false" />
         <activity

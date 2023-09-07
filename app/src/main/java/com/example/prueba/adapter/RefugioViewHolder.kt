@@ -11,13 +11,15 @@ class RefugioViewHolder(view: View):RecyclerView.ViewHolder(view) {
 
     fun render(
         refugio: Refugio,
-        onClickListener:(Refugio) -> Unit
+        onClickListener:(Refugio) -> Unit,
+        onClickSeleccionado:(Refugio) -> Unit
     )
     {
         binding.tvRefugioNombre.text = refugio.nombre
         Glide.with(binding.ivRefugio.context).load(refugio.foto).into(binding.ivRefugio)
 
         itemView.setOnClickListener { onClickListener (refugio) }
+        binding.btnFichaR.setOnClickListener { onClickSeleccionado (refugio)}
 
     }
 }

@@ -50,10 +50,22 @@ class VerListaRefugios : AppCompatActivity() {
         adapter = RefugioAdapter(
             listaRefugios = RefugiosProvider.listaRefugios,
             onClickListener = { refugio -> onItemSelected(refugio)},
+            onClickSeleccionado = {position -> onItemInformation(position)}
         )
         binding.recyclerRefugio.layoutManager = manager
         binding.recyclerRefugio.adapter = adapter
         binding.recyclerRefugio.addItemDecoration(decoration)
+    }
+
+    private fun onItemInformation(refugio: Refugio){
+        val intentFichaRefugio = Intent(this,FichaRefugio::class.java)
+
+        intentFichaRefugio.putExtra("fotoR",refugio.foto)
+        intentFichaRefugio.putExtra("nombreR",refugio.nombre)
+        intentFichaRefugio.putExtra("direccionR",refugio.direccion)
+        intentFichaRefugio.putExtra("redRefugio",refugio.red)
+
+        startActivity(intentFichaRefugio)
     }
 
     private fun onItemSelected(refugio: Refugio){

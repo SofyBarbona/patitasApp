@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">patitasApp</string>
+    <string name="app_name">Patitas</string>
     <string name="flechita"> > </string>
     <string name="contraseña">Contraseña</string>
     <string name="email">Email</string>
@@ -82,5 +82,9 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="logo">logo</string>
     <string name="boton_listado">Listado gatitos</string>
     <string name="boton_Refugios">Listado de Refugios</string>
+    <string name="refugio">Refugio</string>
+    <string name="pDireccion">Dirección: </string>
+    <string name="pRed">Red: </string>
+
 
 </resources>

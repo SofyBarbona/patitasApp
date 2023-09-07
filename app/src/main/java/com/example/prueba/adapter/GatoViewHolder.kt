@@ -7,7 +7,6 @@ import com.example.prueba.Gato
 import com.example.prueba.databinding.ItemGatoBinding
 
 class GatoViewHolder(view: View):RecyclerView.ViewHolder(view) {
-
     private val binding = ItemGatoBinding.bind(view)
 
     fun render(

@@ -8,7 +8,8 @@ import com.example.prueba.Refugio
 
 class RefugioAdapter(
     private val listaRefugios:List<Refugio>,
-    private val onClickListener:(Refugio) -> Unit
+    private val onClickListener:(Refugio) -> Unit,
+    private val onClickSeleccionado:(Refugio) ->Unit
     ) : RecyclerView.Adapter<RefugioViewHolder>(){
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RefugioViewHolder {
@@ -20,6 +21,6 @@ class RefugioAdapter(
 
         override fun onBindViewHolder(holder: RefugioViewHolder, position: Int) {
             val item = listaRefugios[position]
-            holder.render(item, onClickListener)
+            holder.render(item, onClickListener, onClickSeleccionado)
         }
 }

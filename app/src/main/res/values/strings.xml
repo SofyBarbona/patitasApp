@@ -87,6 +87,8 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="pRed">Red: </string>
     <string name="gatitos">Gatitos</string>
     <string name="refugios">Refugios</string>
-
+    <string name="sp_credenciales">SP_CREDENCIALES</string>
+    <string name="nombre_usuario">NOMBRE</string>
+    <string name="password_usuario">PASSWORD</string>
 
 </resources>

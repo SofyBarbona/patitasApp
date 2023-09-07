@@ -10,11 +10,11 @@ import android.widget.Toast
 import com.example.prueba.Gato.VerLista
 
 class MainActivity : AppCompatActivity() {
-    lateinit var etEmail: EditText
-    lateinit var etContra: EditText
-    lateinit var btnIniciarSesion: Button
-    lateinit var btnRegistrar: Button
-    lateinit var cbRecordar: CheckBox
+    private lateinit var etEmail: EditText
+    private lateinit var etContra: EditText
+    private lateinit var btnIniciarSesion: Button
+    private lateinit var btnRegistrar: Button
+    private lateinit var cbRecordar: CheckBox
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +26,14 @@ class MainActivity : AppCompatActivity() {
         btnRegistrar = findViewById(R.id.Registrarse)
         cbRecordar = findViewById(R.id.RecordarUsuario)
 
+        val preferencias = getSharedPreferences(resources.getString(R.string.sp_credenciales), MODE_PRIVATE)
+        val usuarioGuardado = preferencias.getString(resources.getString(R.string.nombre_usuario),null)
+        val passwordGuardado = preferencias.getString(resources.getString(R.string.password_usuario),null)
+
+        if(usuarioGuardado != null && passwordGuardado != null){
+            startMainActivity()
+        }
+
         btnRegistrar.setOnClickListener {
             val intentRegistro = Intent(this, Registro::class.java)
             startActivity(intentRegistro)
@@ -35,20 +43,29 @@ class MainActivity : AppCompatActivity() {
         btnIniciarSesion.setOnClickListener {
             var mensaje = "Iniciar sesion"
             val nombreUsuario = etEmail.text.toString()
-            if(nombreUsuario.isEmpty() || etContra.text.toString().isEmpty()){
+            val passwordUsuario = etContra.text.toString()
+
+            if(nombreUsuario.isEmpty() || passwordUsuario.isEmpty()){
                 mensaje+= " - Faltan Datos"
             }else{
                 mensaje+= " - Datos OK"
                 if(cbRecordar.isChecked){
+                    val preferencias2 = getSharedPreferences(resources.getString(R.string.sp_credenciales), MODE_PRIVATE)
+                    preferencias2.edit().putString(resources.getString(R.string.nombre_usuario),nombreUsuario).apply()
+                    preferencias2.edit().putString(resources.getString(R.string.password_usuario), passwordUsuario).apply()
+
                     mensaje+= " - Recordar Usuario"
                 }
-                val intentLista = Intent(this, VerLista::class.java)
-                intentLista.putExtra("nombre",nombreUsuario)
-                startActivity(intentLista)
-                finish()
+                startMainActivity()
             }
             Toast.makeText(this,mensaje,Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    private fun startMainActivity() {
+        val intentLista = Intent(this, VerLista::class.java)
+        startActivity(intentLista)
+        finish()
     }
 }

@@ -8,8 +8,9 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
 import com.example.prueba.gato.VerListaGatos
+import com.example.prueba.usuario.Usuario
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
     private lateinit var etEmail: EditText
     private lateinit var etContra: EditText
     private lateinit var btnIniciarSesion: Button
@@ -48,7 +49,23 @@ class MainActivity : AppCompatActivity() {
             if(nombreUsuario.isEmpty() || passwordUsuario.isEmpty()){
                 mensaje+= " - Faltan Datos"
             }else{
-                mensaje+= " - Datos OK"
+                val usuarios: MutableList<Usuario> = getUsuarios()
+                var check: Int = 0
+
+                for(item in usuarios){
+                    if(item.email == nombreUsuario && item.contra == passwordUsuario){
+                        mensaje+= " - DATOS CORRECTOS"
+                        check = 1
+                    }
+                    if(item.email == nombreUsuario && item.contra != passwordUsuario){
+                        mensaje+= " - CONTRASEÑA INCORRECTA"
+                    }
+                }
+
+                if(check == 0){
+                    mensaje+= " - NO HAY UN USUARIO REGISTRADO CON ESTOS DATOS"
+                }
+
                 if(cbRecordar.isChecked){
                     val preferencias2 = getSharedPreferences(resources.getString(R.string.sp_credenciales), MODE_PRIVATE)
                     preferencias2.edit().putString(resources.getString(R.string.nombre_usuario),nombreUsuario).apply()
@@ -56,11 +73,22 @@ class MainActivity : AppCompatActivity() {
 
                     mensaje+= " - Recordar Usuario"
                 }
-                startMainActivity()
+
+                if(check == 1){
+                    startMainActivity()
+                }
+
             }
             Toast.makeText(this,mensaje,Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    private fun getUsuarios(): MutableList<Usuario> {
+        val usuarios: MutableList<Usuario> = ArrayList()
+        val bdd = AppDatabase.getDatabase(this)
+        usuarios.addAll(bdd.usuarioDao().getAll())
+        return usuarios
     }
 
     private fun startMainActivity() {

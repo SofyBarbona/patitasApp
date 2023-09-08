@@ -39,7 +39,7 @@
             android:name=".gato.VerListaGatos"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true" />
         <activity
             android:name=".IngresoApp"

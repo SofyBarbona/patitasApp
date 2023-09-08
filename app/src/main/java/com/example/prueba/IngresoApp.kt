@@ -14,8 +14,8 @@ class IngresoApp : AppCompatActivity() {
         setContentView(R.layout.activity_ingreso_app)
 
         val r = Runnable {
-            val intentMainActivity = Intent(this,MainActivity::class.java)
-            startActivity(intentMainActivity)
+            val intentLogin = Intent(this,Login::class.java)
+            startActivity(intentLogin)
             finish()
         }
 

@@ -48,26 +48,43 @@ class Registro : AppCompatActivity() {
             if(nombre.isEmpty() || apellido.isEmpty() || email.isEmpty() || contra.isEmpty() ){
                 mensaje+=" - Faltan Datos"
             }else{
-                mensaje+=" - Datos OK"
+                val usuarios: MutableList<Usuario> = getUsuarios()
+                var check: Int = 1
+
+                for(item in usuarios){
+                    if(item.email == email){
+                        mensaje+= " - ESTA EMAIL YA ESTA REGISTRADO"
+                        check = 0
+                    }
+                }
 
                 if(cbAceptar.isChecked){
-                    mensaje+= "- Acepta los terminos"
+                    if(check == 1){
+                        mensaje+=" - Datos OK"
+                        mensaje+= "- Acepta los terminos"
 
-                    val nuevoUsuario = Usuario(nombre, apellido, email, contra)
-                    AppDatabase.getDatabase(applicationContext).usuarioDao().insertUsuario(nuevoUsuario)
+                        val nuevoUsuario = Usuario(nombre, apellido, email, contra)
+                        AppDatabase.getDatabase(applicationContext).usuarioDao().insertUsuario(nuevoUsuario)
 
-                    val intentListaUsuarios = Intent(this, VerListaUsuarios::class.java)
-                    startActivity(intentListaUsuarios)
-                    finish()
-
+                        val intentListaUsuarios = Intent(this, VerListaUsuarios::class.java)
+                        startActivity(intentListaUsuarios)
+                        finish()
+                    }
                 }else{
-                    mensaje+= "- Debe aceptar los terminos y condiciones"
+                    if(check != 0){
+                        mensaje+= "- Debe aceptar los terminos y condiciones"
+                    }
                 }
 
             }
             Toast.makeText(this,mensaje, Toast.LENGTH_SHORT).show()
         }
+    }
 
-
+    private fun getUsuarios(): MutableList<Usuario> {
+        val usuarios: MutableList<Usuario> = ArrayList()
+        val bdd = AppDatabase.getDatabase(this)
+        usuarios.addAll(bdd.usuarioDao().getAll())
+        return usuarios
     }
 }

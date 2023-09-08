@@ -58,6 +58,7 @@ class Login : AppCompatActivity() {
                         check = 1
                     }
                     if(item.email == nombreUsuario && item.contra != passwordUsuario){
+                        check = -1
                         mensaje+= " - CONTRASEÑA INCORRECTA"
                     }
                 }
@@ -66,11 +67,10 @@ class Login : AppCompatActivity() {
                     mensaje+= " - NO HAY UN USUARIO REGISTRADO CON ESTOS DATOS"
                 }
 
-                if(cbRecordar.isChecked){
+                if(cbRecordar.isChecked && check == 1){
                     val preferencias2 = getSharedPreferences(resources.getString(R.string.sp_credenciales), MODE_PRIVATE)
                     preferencias2.edit().putString(resources.getString(R.string.nombre_usuario),nombreUsuario).apply()
                     preferencias2.edit().putString(resources.getString(R.string.password_usuario), passwordUsuario).apply()
-
                     mensaje+= " - Recordar Usuario"
                 }
 

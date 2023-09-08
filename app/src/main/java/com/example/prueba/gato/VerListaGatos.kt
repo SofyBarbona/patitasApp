@@ -44,6 +44,7 @@ class VerListaGatos : AppCompatActivity() {
         if(item.itemId == R.id.item_listado_Refugios){
             val intentListadoRefugio = Intent(this, VerListaRefugios::class.java)
             startActivity(intentListadoRefugio)
+            finish()
         }
 
         return super.onOptionsItemSelected(item)

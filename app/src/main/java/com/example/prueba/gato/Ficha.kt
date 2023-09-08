@@ -64,7 +64,7 @@ class Ficha : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.item_volver){
-            val intentListaGatos = Intent(this, VerLista::class.java)
+            val intentListaGatos = Intent(this, VerListaGatos::class.java)
             startActivity(intentListaGatos)
             finish()
         }

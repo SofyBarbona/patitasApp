@@ -8,15 +8,17 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.prueba.usuario.Usuario
+import com.example.prueba.usuario.VerListaUsuarios
 
 class Registro : AppCompatActivity() {
-    lateinit var etNombre: EditText
-    lateinit var etApellido: EditText
-    lateinit var edReEmail: EditText
-    lateinit var edReContra: EditText
-    lateinit var btnReRegistrarse: Button
-    lateinit var cbAceptar: CheckBox
-    lateinit var tvLeerCondiciones: TextView
+    private lateinit var etNombre: EditText
+    private lateinit var etApellido: EditText
+    private lateinit var edReEmail: EditText
+    private lateinit var edReContra: EditText
+    private lateinit var btnReRegistrarse: Button
+    private lateinit var cbAceptar: CheckBox
+    private lateinit var tvLeerCondiciones: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,15 +40,26 @@ class Registro : AppCompatActivity() {
 
         btnReRegistrarse.setOnClickListener {
             var mensaje = "Registrarse"
-            if(etNombre.text.toString().isEmpty() || etApellido.text.toString().isEmpty() ||
-                edReEmail.text.toString().isEmpty() || edReContra.text.toString().isEmpty()){
+            val nombre = etNombre.text.toString()
+            val apellido = etApellido.text.toString()
+            val email = edReEmail.text.toString()
+            val contra = edReContra.text.toString()
+
+            if(nombre.isEmpty() || apellido.isEmpty() || email.isEmpty() || contra.isEmpty() ){
                 mensaje+=" - Faltan Datos"
             }else{
                 mensaje+=" - Datos OK"
+
                 if(cbAceptar.isChecked){
                     mensaje+= "- Acepta los terminos"
-                    val intentCodigo = Intent(this, Codigo::class.java)
-                    startActivity(intentCodigo)
+
+                    val nuevoUsuario = Usuario(nombre, apellido, email, contra)
+                    AppDatabase.getDatabase(applicationContext).usuarioDao().insertUsuario(nuevoUsuario)
+
+                    val intentListaUsuarios = Intent(this, VerListaUsuarios::class.java)
+                    startActivity(intentListaUsuarios)
+                    finish()
+
                 }else{
                     mensaje+= "- Debe aceptar los terminos y condiciones"
                 }

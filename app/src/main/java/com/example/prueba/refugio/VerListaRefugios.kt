@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prueba.R
-import com.example.prueba.gato.VerLista
+import com.example.prueba.gato.VerListaGatos
 import com.example.prueba.adapter.RefugioAdapter
 import com.example.prueba.databinding.ActivityVerListaRefugiosBinding
 
@@ -41,7 +41,7 @@ class VerListaRefugios : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.item_listado){
-            val intentListadoGatos = Intent(this, VerLista::class.java)
+            val intentListadoGatos = Intent(this, VerListaGatos::class.java)
             startActivity(intentListadoGatos)
         }
 

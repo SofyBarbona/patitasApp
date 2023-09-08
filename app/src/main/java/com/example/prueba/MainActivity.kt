@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
-import com.example.prueba.gato.VerLista
+import com.example.prueba.gato.VerListaGatos
 
 class MainActivity : AppCompatActivity() {
     private lateinit var etEmail: EditText
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startMainActivity() {
-        val intentLista = Intent(this, VerLista::class.java)
+        val intentLista = Intent(this, VerListaGatos::class.java)
         startActivity(intentLista)
         finish()
     }

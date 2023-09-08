@@ -95,6 +95,8 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="pRaza">Raza:</string>
     <string name="pEdad">Edad:</string>
     <string name="pSexo">Sexo:</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="continuar">Continuar</string>
 
 
 </resources>

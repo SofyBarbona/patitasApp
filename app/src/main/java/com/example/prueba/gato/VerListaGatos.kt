@@ -14,7 +14,7 @@ import com.example.prueba.refugio.VerListaRefugios
 import com.example.prueba.adapter.GatoAdapter
 import com.example.prueba.databinding.ActivityVerListaBinding
 
-class VerLista : AppCompatActivity() {
+class VerListaGatos : AppCompatActivity() {
 
     private lateinit var binding: ActivityVerListaBinding
     private lateinit var adapter: GatoAdapter

@@ -11,12 +11,13 @@
 
     <LinearLayout
         android:layout_width="355dp"
-        android:layout_height="522dp"
-
+        android:layout_height="592dp"
         android:background="@drawable/roundstyle"
+
         android:backgroundTint="@color/white"
         android:orientation="vertical"
-        android:padding="8pt">
+        android:padding="8pt"
+        android:paddingBottom="15dp">
 
         <ImageView
             android:id="@+id/reLogo"
@@ -41,9 +42,9 @@
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
 
+                android:autofillHints="name"
                 android:background="@drawable/roundstyle"
                 android:backgroundTint="#BFC6CC"
-                android:autofillHints="name"
                 android:hint="@string/nombre"
                 android:inputType="text"
                 android:padding="15dp" />
@@ -57,9 +58,9 @@
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
 
+                android:autofillHints="name"
                 android:background="@drawable/roundstyle"
                 android:backgroundTint="#BFC6CC"
-                android:autofillHints="name"
                 android:hint="@string/apellidos"
                 android:inputType="text"
                 android:padding="15dp" />
@@ -72,9 +73,9 @@
             android:layout_height="wrap_content"
 
             android:layout_marginVertical="10dp"
+            android:autofillHints="emailAddress"
             android:background="@drawable/roundstyle"
             android:backgroundTint="#BFC6CC"
-            android:autofillHints="emailAddress"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:padding="15dp" />
@@ -84,9 +85,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
+            android:autofillHints="password"
             android:background="@drawable/roundstyle"
             android:backgroundTint="#BFC6CC"
-            android:autofillHints="password"
             android:hint="@string/contraseña"
             android:inputType="textPassword"
             android:padding="15dp" />
@@ -105,19 +106,22 @@
 
             <CheckBox
                 android:id="@+id/reAceptar"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="20dp"
+                android:paddingVertical="20dp"
                 android:text="@string/aceptoCondiciones"
-                android:textAlignment="center" />
+                android:textAlignment="textStart"
+                />
 
             <TextView
                 android:id="@+id/reLeerCondiciones"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_marginVertical="5pt"
                 android:background="@color/white"
+                android:paddingBottom="20dp"
                 android:text="@string/leerCondiciones"
                 android:textAlignment="center"
                 android:textColor="@color/azul"

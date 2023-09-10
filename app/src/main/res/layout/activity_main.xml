@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="355dp"
-        android:layout_height="580dp"
+        android:layout_height="592dp"
 
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
@@ -56,10 +56,14 @@
 
         <CheckBox
             android:id="@+id/RecordarUsuario"
+            android:drawableLeft="@drawable/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:padding="20dp"
+
+            android:button="@null"
+
+
             android:text="@string/recordarUsuario"/>
 
         <Button

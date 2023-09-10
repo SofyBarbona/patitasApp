@@ -6,12 +6,13 @@
     <string name="nombre">Nombre</string>
     <string name="apellidos">Apellidos</string>
     <string name="registrarse">Registrarse</string>
-    <string name="aceptoCondiciones">Acepto los términos y condiciones</string>
-    <string name="leerCondiciones">Leer condiciones de servicio y política de privacidad de Patitas.</string>
-    <string name="recordarUsuario">Recordar usuario</string>
+    <string name="aceptoCondiciones">\t Acepto los términos y condiciones</string>
+    <string name="leerCondiciones">Leer condiciones de servicio y política \n de privacidad de Patitas.</string>
+    <string name="recordarUsuario">\t Recordar usuario</string>
     <string name="iniciarSesion">Iniciar sesión</string>
     <string name="continuarCondiciones">Al continuar, aceptas las condiciones de servicio y la política de privacidad de Patitas.</string>
     <string name="terminosYCondiciones">Terminos y Condiciones</string>
+
     <string name="Condiciones">Estos Términos y Condiciones de Uso regulan las reglas a que se sujeta la utilización de la APP
 ____________________ (en adelante, la APP), que puede descargarse desde el dominio
 _______________________________ La descarga o utilización de la APP atribuye la condición de
@@ -98,7 +99,7 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="usuarios">Usuarios</string>
     <string name="continuar">Continuar</string>
     <string name="ingresecodigoemail">Ingrese el código enviado a su email</string>
-    <string name="guionbajo">_</string>
+    <string name="guionbajo">-</string>
 
 
 </resources>

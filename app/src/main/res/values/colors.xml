@@ -4,8 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gris">#BFC6CC</color>
     <color name="grisOscuro">#757575</color>
-    <color name="marronClaro">#ec9c64</color>
+    <color name="marronClaro">#6f7357</color>
     <color name="marronOscuro">#664434</color>
     <color name="azul">#0F2DD3</color>
+    <!--nuevos colores-->
+    <color name="rosita">#e4c5c4</color>
+    <color name="beige">#c8ad8d</color>
+   <color name="crema">#f5f0ec</color>
 
 </resources>

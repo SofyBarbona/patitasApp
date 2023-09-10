@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gato.VerListaGatos">
+    tools:context=".gato.VerListaGatos"
+    android:background="@color/rosita">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerRefugio"
-        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" />
 </FrameLayout>

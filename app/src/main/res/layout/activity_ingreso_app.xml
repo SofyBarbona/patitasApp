@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IngresoApp"
-    android:background="@color/marronClaro">
+    >
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="250dp"
         android:contentDescription="@string/logo"
-        android:src="@drawable/loguito" />
+        android:src="@drawable/logopatitas" />
 
 </FrameLayout>

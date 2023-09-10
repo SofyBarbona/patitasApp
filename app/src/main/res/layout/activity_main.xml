@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoapp"
+    android:background="@color/white"
+
     android:gravity="center"
     android:orientation="vertical"
     android:visibility="visible"
@@ -20,11 +21,11 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="47pt"
-            android:layout_height="40pt"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
 
             android:layout_gravity="center"
-            android:background="@drawable/loguito"
+            android:background="@drawable/icotoolbar"
             android:contentDescription="@string/logo" />
 
         <EditText
@@ -56,7 +57,7 @@
 
         <CheckBox
             android:id="@+id/RecordarUsuario"
-            android:drawableLeft="@drawable/checkbox"
+            android:drawableStart="@drawable/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -74,7 +75,7 @@
 
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/marronClaro"
+            android:backgroundTint="@color/rosita"
 
             android:text="@string/iniciarSesion"/>
 
@@ -82,7 +83,7 @@
             android:id="@+id/Registrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/marronOscuro"
+            android:backgroundTint="@color/beige"
             android:text="@string/registrarse" />
 
         <TextView

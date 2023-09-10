@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoapp"
+    android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical"
     android:visibility="visible"
@@ -16,15 +16,16 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
         android:orientation="vertical"
-        android:padding="8pt">
+        android:padding="8pt"
+        tools:ignore="TextSizeCheck">
 
         <ImageView
             android:id="@+id/reLogo"
-            android:layout_width="47pt"
-            android:layout_height="40pt"
-            android:contentDescription="@string/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
-            android:background="@drawable/loguito" />
+            android:background="@drawable/icotoolbar"
+            android:contentDescription="@string/logo" />
 
         <TextView
             android:id="@+id/txEnviado"
@@ -49,76 +50,111 @@
 
             <EditText
                 android:id="@+id/coNumero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:layout_marginHorizontal="8dp"
+                android:layout_width="48dp"
 
-                android:background="@drawable/roundstyle"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="10dp"
                 android:backgroundTint="#BFC6CC"
                 android:hint="@string/guionbajo"
+
+                android:imeOptions="actionNext"
                 android:inputType="number"
-                android:padding="15dp" />
+                android:maxLength="1"
+                android:nextFocusForward="@+id/coNumero2"
+                android:padding="15dp"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
             <EditText
                 android:id="@+id/coNumero2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:layout_marginHorizontal="8dp"
-                android:background="@drawable/roundstyle"
-                android:backgroundTint="#BFC6CC"
+                android:layout_width="48dp"
 
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#BFC6CC"
                 android:hint="@string/guionbajo"
+                android:imeOptions="actionNext"
+
                 android:inputType="number"
-                android:padding="15dp" />
+                android:maxLength="1"
+                android:nextFocusForward="@+id/coNumero3"
+                android:padding="15dp"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="Autofill,TextContrastCheck" />
 
             <EditText
                 android:id="@+id/coNumero3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:layout_marginHorizontal="8dp"
-                android:background="@drawable/roundstyle"
-                android:backgroundTint="#BFC6CC"
+                android:layout_width="48dp"
 
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#BFC6CC"
                 android:hint="@string/guionbajo"
+                android:imeOptions="actionNext"
                 android:inputType="number"
-                android:padding="15dp" />
+                android:maxLength="1"
+                android:nextFocusForward="@+id/coNumero4"
+                android:padding="15dp"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="Autofill,TextContrastCheck"
+                tools:visibility="visible" />
 
             <EditText
                 android:id="@+id/coNumero4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:layout_marginHorizontal="8dp"
-                android:background="@drawable/roundstyle"
-                android:backgroundTint="#BFC6CC"
+                android:layout_width="48dp"
 
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#BFC6CC"
                 android:hint="@string/guionbajo"
+                android:imeOptions="actionNext"
+
+                android:importantForAutofill="no"
                 android:inputType="number"
-                android:padding="15dp" />
+                android:maxLength="1"
+                android:nextFocusForward="@+id/coNumero5"
+                android:padding="15dp"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
 
             <EditText
                 android:id="@+id/coNumero5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:layout_marginHorizontal="8dp"
-                android:background="@drawable/roundstyle"
-                android:backgroundTint="#BFC6CC"
 
+
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#BFC6CC"
+                android:contextClickable="false"
+
+                android:duplicateParentState="false"
                 android:hint="@string/guionbajo"
+                android:imeOptions="actionDone"
                 android:inputType="number"
-                android:padding="15dp" />
+                android:maxLength="1"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="Autofill,TextContrastCheck" />
         </LinearLayout>
 
         <Button
             android:id="@+id/coContinuar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#664434"
-            android:text="@string/continuar" />
+            android:backgroundTint="@color/beige"
+            android:text="@string/continuar"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 

@@ -3,7 +3,8 @@
     <style name="Base.Theme.patitasApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimaryDark">#664434</item>
+        <!-- status bar color: -->
+        <item name="colorPrimaryDark">@color/beige</item>
     </style>
 
 </resources>

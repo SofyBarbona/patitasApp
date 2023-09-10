@@ -100,6 +100,7 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="continuar">Continuar</string>
     <string name="ingresecodigoemail">Ingrese el código enviado a su email</string>
     <string name="guionbajo">-</string>
+    <string name="espacio"> </string>
 
 
 </resources>

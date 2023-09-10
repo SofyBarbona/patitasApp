@@ -40,7 +40,7 @@ class Ficha : AppCompatActivity() {
         nombreG = findViewById(R.id.txNombre)
         nombreG.text = nombre
 
-        razaG = findViewById(R.id.txRaza)
+        razaG =findViewById(R.id.txRaza)
         razaG.text = raza
 
         edadG = findViewById(R.id.txEdad)

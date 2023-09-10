@@ -7,7 +7,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.prueba.R
 import com.example.prueba.gato.VerListaGatos
@@ -50,7 +49,7 @@ class VerListaRefugios : AppCompatActivity() {
     }
     private fun initRecyclerView(){
         val manager = LinearLayoutManager(this)
-        val decoration = DividerItemDecoration(this,manager.orientation)
+
         adapter = RefugioAdapter(
             listaRefugios = RefugiosProvider.listaRefugios,
             onClickListener = { refugio -> onItemSelected(refugio)},
@@ -58,7 +57,7 @@ class VerListaRefugios : AppCompatActivity() {
         )
         binding.recyclerRefugio.layoutManager = manager
         binding.recyclerRefugio.adapter = adapter
-        binding.recyclerRefugio.addItemDecoration(decoration)
+
     }
 
     private fun onItemInformation(refugio: Refugio){

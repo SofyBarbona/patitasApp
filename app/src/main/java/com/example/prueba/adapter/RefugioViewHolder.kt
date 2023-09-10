@@ -19,7 +19,8 @@ class RefugioViewHolder(view: View):RecyclerView.ViewHolder(view) {
         Glide.with(binding.ivRefugio.context).load(refugio.foto).into(binding.ivRefugio)
 
         itemView.setOnClickListener { onClickListener (refugio) }
-        binding.btnFichaR.setOnClickListener { onClickSeleccionado (refugio)}
+        //btnFichaR -> btnFicha
+        binding.btnFicha.setOnClickListener { onClickSeleccionado (refugio)}
 
     }
 }

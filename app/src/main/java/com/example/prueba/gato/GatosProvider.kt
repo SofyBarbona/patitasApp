@@ -6,43 +6,43 @@ class GatosProvider {
             Gato("Erza",
                  "Gato común europeo",
                  4,
-                 "Hembra",
-                 "https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-7.jpg"
+                 " Hembra",
+                 "https://s1.1zoom.me/big0/497/Cats_White_background_496220.jpg"
             ),
             Gato(
                 "Mini",
                 "Negro",
                 10,
                 "Hembra",
-                "https://pixnio.com/free-images/2017/09/26/2017-09-26-09-41-34.jpg"
+                "https://img.freepik.com/fotos-premium/gatito-blanco-sentado-sobre-fondo-blanco_514728-81.jpg"
             ),
             Gato(
-                "Rey",
+                "Capitán",
                 "Mestizo",
                 3,
                 "Macho",
-                "https://www.imagenesdegatos.net/wp-content/uploads/2015/02/gato-gris.jpg"
+                "https://us.123rf.com/450wm/intelwond/intelwond1509/intelwond150900041/46111816-peque%C3%B1o-gatito-rojo-lindo-sentado-y-mirando-directamente-a-la-c%C3%A1mara-aislado-en-un-fondo-blanco.jpg"
             ),
             Gato(
                 "Manteca",
                 "Skookum",
                 3,
                 "Hembra",
-                "https://3.bp.blogspot.com/-AMQf7on8nuY/UbtRxOLeRyI/AAAAAAAAACs/nKmm66KQdJE/s1600/gatitos-bebe-3.jpg"
+                "https://media.istockphoto.com/id/1443562748/es/foto/lindo-gato-de-jengibre.jpg?s=612x612&w=0&k=20&c=JVC5Z3LxpaTQaXu_fMZjIb73r39z6b0SnAxvNI8iZG0="
             ),
             Gato(
                 "Milaneso",
                 "Ural rex",
                 5,
                 "Macho",
-                "https://res.cloudinary.com/postedin/image/upload/d_mascotas:no-image.jpg,f_auto,q_80/mascotas/c-postedin-image-60628.jpeg"
+                "https://media.istockphoto.com/id/514515260/es/foto/neva-baile-observando-a-la-c%C3%A1mara-aislado-sobre-blanco.jpg?s=612x612&w=0&k=20&c=0Hznsl5ly-7fA8rHJ-w6PjhsKHY8y4xi4tLXbqV6z3k="
             ),
             Gato(
                 "Choripan",
                 "Mestizo",
                 7,
                 "Macho",
-                "https://2.bp.blogspot.com/-2jDsEdprmn8/T4ZUcZqs-CI/AAAAAAAABIA/ElHp8kPA4aA/s1600/foto+de+gatos+9.jpg")
+                "https://us.123rf.com/450wm/ravnodenstvie/ravnodenstvie1109/ravnodenstvie110900068/10651721-peludo-gato-marr%C3%B3n-sobre-fondo-blanco.jpg?ver=6")
         )
     }
 }

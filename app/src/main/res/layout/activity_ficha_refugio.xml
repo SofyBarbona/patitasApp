@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/rosita">
 
@@ -11,7 +12,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="403dp"
+        android:layout_height="500dp"
         android:layout_margin="15pt"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
@@ -29,9 +30,10 @@
             android:id="@+id/tfNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="40sp"
+            android:textColor="@color/grisOscuro"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -48,10 +50,11 @@
                     android:id="@+id/palabraDireccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pDireccion"
                     android:textColor="#433E3E"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/map"
+                    />
 
                 <TextView
                     android:id="@+id/tfDireccion"
@@ -59,9 +62,13 @@
                     android:layout_height="wrap_content"
                     android:textColor="#433E3E"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
+
 
             </LinearLayout>
+            <!-- PRUEBA DE ICONO-->
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,10 +81,11 @@
                     android:id="@+id/palabraRed"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/pRed"
+
                     android:textColor="#433E3E"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/arroba"/>
 
                 <TextView
                     android:id="@+id/tfRed"

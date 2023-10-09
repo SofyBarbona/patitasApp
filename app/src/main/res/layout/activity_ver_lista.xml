@@ -12,8 +12,6 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
 
-
-
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerGato"
                 android:layout_marginTop="70dp"

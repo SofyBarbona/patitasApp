@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.prueba.PRUEBA
 import com.example.prueba.R
 import com.example.prueba.refugio.VerListaRefugios
 import com.example.prueba.adapter.GatoAdapter
@@ -31,7 +32,6 @@ class VerListaGatos : AppCompatActivity() {
         supportActionBar!!.title = resources.getString(R.string.gatitos)
         supportActionBar!!.setIcon(R.drawable.loguitito)
 
-
         initRecyclerView()
     }
 
@@ -47,9 +47,14 @@ class VerListaGatos : AppCompatActivity() {
             finish()
         }
 
+        if(item.itemId == R.id.item_PRUEBA){
+            val intentPRUEBA= Intent(this, PRUEBA::class.java)
+            startActivity(intentPRUEBA)
+            finish()
+        }
+
         return super.onOptionsItemSelected(item)
     }
-
 
     private fun initRecyclerView(){
         val manager = LinearLayoutManager(this)

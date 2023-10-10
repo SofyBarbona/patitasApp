@@ -2,7 +2,7 @@ package com.example.prueba.gato
 
 class GatosProvider {
     companion object{
-        val listaGatos = listOf<Gato>(
+        val listaGatos:MutableList<Gato> = arrayListOf(
             Gato("Erza",
                  "Gato común europeo",
                  4,

@@ -7,12 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.prueba.configurations.RetrofitClient
 import com.example.prueba.dtos.Images
 import com.example.prueba.endpoints.MyApi
+import com.example.prueba.gato.Gato
+import com.example.prueba.gato.GatosProvider
 import retrofit2.Call
 import retrofit2.Response
 
 class PRUEBA : AppCompatActivity() {
-    private lateinit var imagesGatos:List<String>
     private lateinit var tvServicioRest : TextView
+    private lateinit var probando : TextView
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
@@ -26,8 +28,15 @@ class PRUEBA : AppCompatActivity() {
             override fun onResponse(call: Call<List<Images>>, response:Response<List<Images>>){
                 val images = response.body()
                 if(images != null){
+
                     tvServicioRest = findViewById(R.id.tvServicioRest)
-                    tvServicioRest.text = images.toString()
+                    tvServicioRest.text = images[0].url
+
+                    probando = findViewById(R.id.tvProbando)
+                    probando.text = images.toString()
+
+                    changeList(GatosProvider.listaGatos,images)
+
                 }
             }
 
@@ -36,7 +45,13 @@ class PRUEBA : AppCompatActivity() {
             }
         })
 
+    }
 
+    private fun changeList(listaGatos: MutableList<Gato>, listaImages: List<Images>){
+        for(i in 0..9){
+            listaGatos[i].foto = listaImages[i].url
+        }
 
     }
+
 }

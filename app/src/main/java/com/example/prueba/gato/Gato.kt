@@ -5,5 +5,7 @@ data class Gato (
     val raza: String,
     val edad: Int,
     val sexo: String,
-    val foto: String
+    var foto: String
 )
+
+

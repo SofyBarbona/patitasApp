@@ -56,6 +56,7 @@ class VerListaGatos : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+
     private fun initRecyclerView(){
         val manager = LinearLayoutManager(this)
 

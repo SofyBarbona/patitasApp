@@ -3,21 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PRUEBA">
+    tools:context=".PRUEBA"
+    android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvServicioRest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:layout_margin="10dp">
-        </TextView>
+            android:layout_margin="10dp"></TextView>
 
-    </ScrollView>
+        <TextView
+            android:id="@+id/tvProbando"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="10dp">
+
+        </TextView>
 
 
 </LinearLayout>

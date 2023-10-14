@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.prueba.gato.VerListaGatos
 import com.example.prueba.usuario.Usuario
 
@@ -50,7 +51,7 @@ class Login : AppCompatActivity() {
                 mensaje+= " - Faltan Datos"
             }else{
                 val usuarios: MutableList<Usuario> = getUsuarios()
-                var check: Int = 0
+                var check = 0
 
                 for(item in usuarios){
                     if(item.email == nombreUsuario && item.contra == passwordUsuario){
@@ -81,6 +82,18 @@ class Login : AppCompatActivity() {
             }
             Toast.makeText(this,mensaje,Toast.LENGTH_SHORT).show()
         }
+
+        cbRecordar.setOnClickListener {
+            val intentNotificacion = Intent(this,Notificacion::class.java)
+            if(cbRecordar.isChecked){
+                intentNotificacion.putExtra("seleccionado",true)
+                ContextCompat.startForegroundService(this,intentNotificacion)
+            }else{
+                stopService(intentNotificacion)
+            }
+
+        }
+
 
     }
 

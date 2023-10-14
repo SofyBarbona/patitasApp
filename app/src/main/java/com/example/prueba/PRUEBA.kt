@@ -14,7 +14,7 @@ import retrofit2.Response
 
 class PRUEBA : AppCompatActivity() {
     private lateinit var tvServicioRest : TextView
-    private lateinit var probando : TextView
+  //  private lateinit var probando : TextView
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
@@ -30,13 +30,9 @@ class PRUEBA : AppCompatActivity() {
                 if(images != null){
 
                     tvServicioRest = findViewById(R.id.tvServicioRest)
-                    tvServicioRest.text = images[0].url
-
-                    probando = findViewById(R.id.tvProbando)
-                    probando.text = images.toString()
+                    tvServicioRest.text = images.toString()
 
                     changeList(GatosProvider.listaGatos,images)
-
                 }
             }
 
@@ -51,7 +47,6 @@ class PRUEBA : AppCompatActivity() {
         for(i in 0..9){
             listaGatos[i].foto = listaImages[i].url
         }
-
     }
 
 }

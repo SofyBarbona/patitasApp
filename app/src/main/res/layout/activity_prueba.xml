@@ -7,21 +7,33 @@
     android:orientation="vertical">
 
 
-        <TextView
-            android:id="@+id/tvServicioRest"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_margin="10dp"></TextView>
+            android:layout_height="match_parent" >
 
-        <TextView
-            android:id="@+id/tvProbando"
+                <TextView
+                    android:id="@+id/tvServicioRest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp">
+
+                </TextView>
+        </ScrollView>
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_margin="10dp">
+            android:layout_height="match_parent" >
 
-        </TextView>
+                <TextView
+                    android:id="@+id/tvProbando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp">
+
+                </TextView>
+        </ScrollView>
 
 
 </LinearLayout>

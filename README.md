@@ -1,7 +1,7 @@
 # patitasApp
 
 Aplicación creada en Android Studio, lenguaje Kotlin.
-Ofrece un listado de Gatos con sus respectivas carácteristicas, los datos fueron obtenidos de LA API: https://www.api-ninjas.com/api/cats
+Ofrece un listado de Gatos con sus respectivas carácteristicas, los datos fueron obtenidos de LA API: https://www.api-ninjas.com/api/cats.
 Ofrece un listado de los refugios que brindan Gatos rescatados en adopción
 
 Recursos implementados en el desarrollo:

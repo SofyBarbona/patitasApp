@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.prueba.AppDatabase
+import com.example.prueba.configurations.AppDatabase
 import com.example.prueba.Codigo
 import com.example.prueba.R
 import com.example.prueba.adapter.UsuarioAdapter

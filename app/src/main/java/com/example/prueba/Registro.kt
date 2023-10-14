@@ -8,6 +8,7 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.prueba.configurations.AppDatabase
 import com.example.prueba.usuario.Usuario
 import com.example.prueba.usuario.VerListaUsuarios
 
@@ -49,7 +50,7 @@ class Registro : AppCompatActivity() {
                 mensaje+=" - Faltan Datos"
             }else{
                 val usuarios: MutableList<Usuario> = getUsuarios()
-                var check: Int = 1
+                var check = 1
 
                 for(item in usuarios){
                     if(item.email == email){
@@ -80,6 +81,8 @@ class Registro : AppCompatActivity() {
             Toast.makeText(this,mensaje, Toast.LENGTH_SHORT).show()
         }
     }
+
+
 
     private fun getUsuarios(): MutableList<Usuario> {
         val usuarios: MutableList<Usuario> = ArrayList()

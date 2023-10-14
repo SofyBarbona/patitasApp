@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.servicios
 import android.Manifest
 import android.app.Notification
 import android.app.NotificationChannel
@@ -13,6 +13,7 @@ import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import com.example.prueba.R
 
 class ServicioMusica : Service() {
 
@@ -76,7 +77,7 @@ class ServicioMusica : Service() {
 
     //
     private fun configurarMediaPlayer(){
-        mediaPlayer = MediaPlayer.create(this,R.raw.musica)
+        mediaPlayer = MediaPlayer.create(this, R.raw.musica)
         mediaPlayer?.setOnCompletionListener {
             stop()
         }

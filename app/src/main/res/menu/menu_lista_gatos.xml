@@ -6,12 +6,4 @@
         android:id="@+id/item_listado_Refugios"
         android:title="@string/boton_Refugios"
         />
-    <item
-        android:id="@+id/item_PRUEBA"
-        android:title="PRUEBA"
-        />
-
-
-
-
 </menu>

@@ -93,9 +93,9 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="password_usuario">PASSWORD</string>
     <string name="volver">volver</string>
     <string name="gato">Gato</string>
-    <string name="pRaza">Raza:</string>
-    <string name="pEdad">Edad:</string>
-    <string name="pSexo">Sexo:</string>
+    <string name="pRaza">Raza: </string>
+    <string name="pFriendly">Friendly: </string>
+    <string name="pSexo">Sexo: </string>
     <string name="usuarios">Usuarios</string>
     <string name="continuar">Continuar</string>
     <string name="ingresecodigoemail">Ingrese el código enviado a su email</string>

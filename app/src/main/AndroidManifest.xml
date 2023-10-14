@@ -17,9 +17,6 @@
         android:theme="@style/Base.Theme.patitasApp"
         tools:targetApi="31">
         <activity
-            android:name=".PRUEBA"
-            android:exported="false" />
-        <activity
             android:name=".usuario.VerListaUsuarios"
             android:exported="false" />
         <activity
@@ -56,8 +53,12 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".ServicioMusica" android:exported="false"/>
-        <service android:name=".Notificacion" android:exported="false"/>
+        <service
+            android:name=".servicios.ServicioMusica"
+            android:exported="false" />
+        <service
+            android:name=".servicios.Notificacion"
+            android:exported="false" />
     </application>
 
 </manifest>

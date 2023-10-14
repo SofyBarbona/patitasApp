@@ -6,6 +6,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 
 data class Images(
-    val id: String,
-    val url: String,
+    val name: String,
+    val image_link: String,
+    val family_friendly: Int
 )

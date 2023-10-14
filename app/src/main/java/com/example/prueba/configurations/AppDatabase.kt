@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.configurations
 
 import android.content.Context
 import androidx.room.Database
@@ -16,7 +16,7 @@ abstract class AppDatabase: RoomDatabase() {
 
         private var INSTANCIA: AppDatabase? = null
 
-        fun getDatabase(contexto: Context) : AppDatabase{
+        fun getDatabase(contexto: Context) : AppDatabase {
             if(INSTANCIA == null){
                 synchronized(this){
                     INSTANCIA = Room.databaseBuilder(

@@ -4,73 +4,115 @@ class GatosProvider {
     companion object{
         val listaGatos:MutableList<Gato> = arrayListOf(
             Gato("Erza",
-                 "Gato común europeo",
-                 4,
+                 "",
                  " Hembra",
-                 ""
+                 "",
+                0
             ),
             Gato(
                 "Mini",
-                "Negro",
-                10,
+                "",
                 "Hembra",
-                ""
+                "",
+                0
             ),
             Gato(
                 "Capitán",
-                "Mestizo",
-                3,
+                "",
                 "Macho",
-                ""
+                "",
+                0
             ),
             Gato(
                 "Manteca",
-                "Skookum",
-                3,
+                "",
                 "Hembra",
-                ""
+                "",
+                0
             ),
             Gato(
                 "Milaneso",
-                "Ural rex",
-                5,
+                "",
                 "Macho",
-                ""
+                "",
+                0
             ),
             Gato(
                 "Jupiter",
-                "Ural rex",
-                5,
+                "",
                 "Macho",
-                ""
+                "",
+                0
             ),
             Gato(
                 "Fideo",
-                "Ural rex",
-                5,
+                "",
                 "Macho",
-                ""
+                "",
+                0
             ),
             Gato(
-                "Messi",
-                "Ural rex",
-                5,
-                "Macho",
-                ""
+                "Palm",
+                "",
+                "Hembra",
+                "",
+                0
             ),
             Gato(
                 "Pipa",
-                "Ural rex",
-                5,
+                "",
                 "Macho",
-                ""
+                "",
+                0
+            ),
+            Gato(
+                "Taylor",
+                "",
+                "Hembra",
+                "",
+                0
+            ),
+            Gato(
+                "Messi",
+                "",
+                "Macho",
+                "",
+                0
+            ),
+            Gato(
+                "Lua",
+                "",
+                "Hembra",
+                "",
+                0
+            ),
+            Gato(
+                "Mulan",
+                "",
+                "Hembra",
+                "",
+                0
+            ),
+            Gato(
+                "Michi",
+                "",
+                "Macho",
+                "",
+                0
             ),
             Gato(
                 "Choripan",
-                "Mestizo",
-                7,
+                "",
                 "Macho",
-                "")
+                "",
+                0
+            ),
+            Gato(
+                "Katara",
+                "",
+                "Hembra",
+                "",
+                0)
         )
     }
 }

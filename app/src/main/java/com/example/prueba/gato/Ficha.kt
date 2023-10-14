@@ -16,7 +16,7 @@ class Ficha : AppCompatActivity() {
     private lateinit var fotoG: ImageView
     private lateinit var nombreG: TextView
     private lateinit var razaG: TextView
-    private lateinit var edadG: TextView
+    private lateinit var friendlyG: TextView
     private lateinit var sexoG: TextView
     private lateinit var toolbar: Toolbar
 
@@ -30,7 +30,7 @@ class Ficha : AppCompatActivity() {
         val foto = bundle?.getString("fotoG")
         val nombre = bundle?.getString("nombreG")
         val raza = bundle?.getString("razaG")
-        val edad = bundle?.getString("edadG")
+        val friendly = bundle?.getString("friendlyG")
         val sexo = bundle?.getString("sexoG")
 
         setSupportActionBar(toolbar)
@@ -43,12 +43,11 @@ class Ficha : AppCompatActivity() {
         razaG =findViewById(R.id.txRaza)
         razaG.text = raza
 
-        edadG = findViewById(R.id.txEdad)
-        edadG.text = edad
+        friendlyG = findViewById(R.id.txFriendly)
+        friendlyG.text = friendly
 
         sexoG = findViewById(R.id.txSexo)
         sexoG.text = sexo
-
 
         fotoG = findViewById(R.id.txGato)
         Glide.with(fotoG.context).load(foto).into(fotoG)

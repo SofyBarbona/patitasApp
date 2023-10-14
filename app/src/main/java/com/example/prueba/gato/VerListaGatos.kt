@@ -7,13 +7,12 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.prueba.PRUEBA
 import com.example.prueba.R
 import com.example.prueba.refugio.VerListaRefugios
 import com.example.prueba.adapter.GatoAdapter
 import com.example.prueba.databinding.ActivityVerListaBinding
+
 
 class VerListaGatos : AppCompatActivity() {
 
@@ -47,15 +46,8 @@ class VerListaGatos : AppCompatActivity() {
             finish()
         }
 
-        if(item.itemId == R.id.item_PRUEBA){
-            val intentPRUEBA= Intent(this, PRUEBA::class.java)
-            startActivity(intentPRUEBA)
-            finish()
-        }
-
         return super.onOptionsItemSelected(item)
     }
-
 
     private fun initRecyclerView(){
         val manager = LinearLayoutManager(this)
@@ -74,11 +66,10 @@ class VerListaGatos : AppCompatActivity() {
         intentFicha.putExtra("fotoG",gato.foto)
         intentFicha.putExtra("nombreG",gato.nombre)
         intentFicha.putExtra("razaG",gato.raza)
-        intentFicha.putExtra("edadG",gato.edad.toString())
         intentFicha.putExtra("sexoG",gato.sexo)
+        intentFicha.putExtra("friendlyG",gato.friendly.toString())
         startActivity(intentFicha)
     }
-
     private fun onItemSelected(gato: Gato){
         Toast.makeText(this,gato.nombre, Toast.LENGTH_SHORT).show()
     }

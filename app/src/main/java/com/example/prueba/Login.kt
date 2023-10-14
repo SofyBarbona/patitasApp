@@ -8,7 +8,9 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.example.prueba.configurations.AppDatabase
 import com.example.prueba.gato.VerListaGatos
+import com.example.prueba.servicios.Notificacion
 import com.example.prueba.usuario.Usuario
 
 class Login : AppCompatActivity() {
@@ -84,7 +86,7 @@ class Login : AppCompatActivity() {
         }
 
         cbRecordar.setOnClickListener {
-            val intentNotificacion = Intent(this,Notificacion::class.java)
+            val intentNotificacion = Intent(this, Notificacion::class.java)
             if(cbRecordar.isChecked){
                 intentNotificacion.putExtra("seleccionado",true)
                 ContextCompat.startForegroundService(this,intentNotificacion)

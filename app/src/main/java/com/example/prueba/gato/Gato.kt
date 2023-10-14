@@ -5,7 +5,10 @@ data class Gato (
     var raza: String,
     val sexo: String,
     var foto: String,
-    var friendly: Int
+    var amigableConHumanos: Int,
+    var atencionNecesaria: Int,
+    var tiraPelo: Int,
+    var amigableConAnimales: Int
 )
 
 

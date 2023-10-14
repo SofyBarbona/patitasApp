@@ -7,6 +7,9 @@ class GatosProvider {
                  "",
                  " Hembra",
                  "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -14,6 +17,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -21,6 +27,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -28,6 +37,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -35,6 +47,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -42,6 +57,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -49,6 +67,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -56,6 +77,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -63,6 +87,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -70,6 +97,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -77,6 +107,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -84,6 +117,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -91,6 +127,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -98,6 +137,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -105,6 +147,9 @@ class GatosProvider {
                 "",
                 "Macho",
                 "",
+                0,
+                0,
+                0,
                 0
             ),
             Gato(
@@ -112,6 +157,9 @@ class GatosProvider {
                 "",
                 "Hembra",
                 "",
+                0,
+                0,
+                0,
                 0)
         )
     }

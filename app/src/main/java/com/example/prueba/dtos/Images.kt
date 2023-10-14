@@ -8,5 +8,8 @@ import com.squareup.moshi.JsonClass
 data class Images(
     val name: String,
     val image_link: String,
-    val family_friendly: Int
+    val family_friendly: Int,
+    val grooming: Int,
+    val shedding: Int,
+    val other_pets_friendly: Int
 )

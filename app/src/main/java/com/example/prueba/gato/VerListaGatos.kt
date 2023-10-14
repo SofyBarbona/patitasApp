@@ -45,7 +45,6 @@ class VerListaGatos : AppCompatActivity() {
             startActivity(intentListadoRefugio)
             finish()
         }
-
         return super.onOptionsItemSelected(item)
     }
 
@@ -67,7 +66,10 @@ class VerListaGatos : AppCompatActivity() {
         intentFicha.putExtra("nombreG",gato.nombre)
         intentFicha.putExtra("razaG",gato.raza)
         intentFicha.putExtra("sexoG",gato.sexo)
-        intentFicha.putExtra("friendlyG",gato.friendly.toString())
+        intentFicha.putExtra("friendlyG",gato.amigableConHumanos.toString())
+        intentFicha.putExtra("atencionNecesariaG",gato.atencionNecesaria.toString())
+        intentFicha.putExtra("tiraPeloG",gato.tiraPelo.toString())
+        intentFicha.putExtra("amigableConAnimalesG",gato.amigableConAnimales.toString())
         startActivity(intentFicha)
     }
     private fun onItemSelected(gato: Gato){

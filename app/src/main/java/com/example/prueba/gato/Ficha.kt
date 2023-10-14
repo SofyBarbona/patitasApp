@@ -10,14 +10,14 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import com.bumptech.glide.Glide
+import com.example.prueba.Fragmento
+import com.example.prueba.FragmentoInterfaz
 import com.example.prueba.R
+import com.example.prueba.SegundoFragmento
 
-class Ficha : AppCompatActivity() {
+class Ficha : AppCompatActivity(), FragmentoInterfaz {
     private lateinit var fotoG: ImageView
     private lateinit var nombreG: TextView
-    private lateinit var razaG: TextView
-    private lateinit var friendlyG: TextView
-    private lateinit var sexoG: TextView
     private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +33,7 @@ class Ficha : AppCompatActivity() {
         val friendly = bundle?.getString("friendlyG")
         val sexo = bundle?.getString("sexoG")
 
+
         setSupportActionBar(toolbar)
         supportActionBar!!.title = nombre
         supportActionBar!!.setIcon(R.drawable.loguitito)
@@ -40,22 +41,52 @@ class Ficha : AppCompatActivity() {
         nombreG = findViewById(R.id.txNombre)
         nombreG.text = nombre
 
-        razaG =findViewById(R.id.txRaza)
-        razaG.text = raza
-
-        friendlyG = findViewById(R.id.txFriendly)
-        friendlyG.text = friendly
-
-        sexoG = findViewById(R.id.txSexo)
-        sexoG.text = sexo
-
         fotoG = findViewById(R.id.txGato)
         Glide.with(fotoG.context).load(foto).into(fotoG)
 
-        Toast.makeText(this,nombre, Toast.LENGTH_SHORT).show()
 
+        //Fragmento
+        val primerFragmento = Fragmento()
+        val mBundle = Bundle()
+
+        mBundle.putString("raza",raza)
+        mBundle.putString("friendly",friendly)
+        mBundle.putString("sexo",sexo)
+
+        primerFragmento.arguments = mBundle
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.contenedor_fragmento, primerFragmento)
+            .commit()
+
+        supportFragmentManager.findFragmentById(R.id.contenedor_fragmento) as? Fragmento
+        primerFragmento?.listener = this
+        //Fragmento
+
+        Toast.makeText(this,nombre, Toast.LENGTH_SHORT).show()
     }
 
+    override fun mostrarSegundoFragmento() {
+        val bundle = intent.extras
+        val atencion = bundle?.getString("atencionNecesariaG")
+        val pelo = bundle?.getString("tiraPeloG")
+        val amigable = bundle?.getString("amigableConAnimalesG")
+
+        val segundoFragmento = SegundoFragmento()
+        val mBundle = Bundle()
+
+        mBundle.putString("atencion",atencion)
+        mBundle.putString("pelo",pelo)
+        mBundle.putString("amigable",amigable)
+
+        segundoFragmento.arguments = mBundle
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.contenedor_segundo_fragmento, segundoFragmento)
+            .addToBackStack(null)
+            .commit()
+
+    }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_ficha, menu)
         return super.onCreateOptionsMenu(menu)

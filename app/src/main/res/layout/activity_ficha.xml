@@ -10,113 +10,48 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="550dp"
         android:layout_margin="15pt"
-
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
-        android:padding="10pt">
+        android:padding="5pt">
 
         <ImageView
             android:id="@+id/txGato"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginHorizontal="20pt"
-            android:contentDescription="@string/gato"
             android:layout_marginBottom="80dp"
-            />
+            android:contentDescription="@string/gato" />
 
         <TextView
             android:id="@+id/txNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:textAlignment="center"
             android:textColor="#433E3E"
             android:textSize="40sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="20dp"/>
+            android:textStyle="bold" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/contenedor_fragmento"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5pt">
+                android:layout_height="match_parent"></FrameLayout>
 
-                <TextView
-                    android:id="@+id/palabraRaza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pRaza"
-                    android:textColor="#433E3E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txRaza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#433E3E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/contenedor_segundo_fragmento"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5pt"
-                android:background="@drawable/roundstyle"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"></FrameLayout>
+        </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/palabraFriendly"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/pFriendly"
-                    android:textColor="#433E3E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/txFriendly"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#433E3E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/roundstyle">
-
-                <TextView
-                    android:id="@+id/palabraSexo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pSexo"
-                    android:textColor="#433E3E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txSexo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#433E3E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

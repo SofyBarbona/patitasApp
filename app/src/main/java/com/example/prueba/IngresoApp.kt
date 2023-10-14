@@ -72,7 +72,11 @@ class IngresoApp : AppCompatActivity() {
         for(i in 0..15){
             listaGatos[i].foto = listaImages[i].image_link
             listaGatos[i].raza = listaImages[i].name
-            listaGatos[i].friendly = listaImages[i].family_friendly
+            listaGatos[i].amigableConHumanos = listaImages[i].family_friendly
+            listaGatos[i].atencionNecesaria = listaImages[i].grooming
+            listaGatos[i].tiraPelo = listaImages[i].shedding
+            listaGatos[i].amigableConAnimales = listaImages[i].other_pets_friendly
+
         }
     }
 

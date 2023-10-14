@@ -75,16 +75,16 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/palabraEdad"
+                    android:id="@+id/palabraFriendly"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/pEdad"
+                    android:text="@string/pFriendly"
                     android:textColor="#433E3E"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txEdad"
+                    android:id="@+id/txFriendly"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#433E3E"

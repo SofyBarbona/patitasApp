@@ -43,7 +43,7 @@ class GatosProvider {
                 0
             ),
             Gato(
-                "Milaneso",
+                "Milaneso, Kuki y Loki",
                 "",
                 "Macho",
                 "",

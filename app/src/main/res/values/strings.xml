@@ -94,16 +94,17 @@ expresamente a la jurisdicción de los tribunales de ___________________________
     <string name="volver">volver</string>
     <string name="gato">Gato</string>
     <string name="pRaza">Raza: </string>
-    <string name="pFriendly">Friendly: </string>
+    <string name="pFriendly">Amoroso: </string>
     <string name="pSexo">Sexo: </string>
     <string name="pAtencion">Atencion requerida: </string>
-    <string name="pTiraPelo">Tira pelo: </string>
+    <string name="pTiraPelo">Peludo: </string>
     <string name="pAmigable">Amigable con animales: </string>
     <string name="usuarios">Usuarios</string>
     <string name="continuar">Continuar</string>
     <string name="ingresecodigoemail">Ingrese el código enviado a su email</string>
     <string name="guionbajo">-</string>
     <string name="espacio"> </string>
+    <string name="informacion">Siendo 1 el menor nivel y 5 el máximo</string>
 
 
 </resources>

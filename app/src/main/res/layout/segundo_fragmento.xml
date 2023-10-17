@@ -3,25 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/rosita">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5pt">
+            android:layout_marginBottom="5pt"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/palabraAtencion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pAtencion"
-                android:textColor="#433E3E"
+                android:textColor="@color/grisMasOscuro"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -29,14 +25,15 @@
                 android:id="@+id/txAtencion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#433E3E"
+                android:textColor="@color/grisOscuro"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5pt"
             android:background="@drawable/roundstyle"
@@ -45,9 +42,9 @@
             <TextView
                 android:id="@+id/palabraTiraPelo"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/pTiraPelo"
-                android:textColor="#433E3E"
+                android:textColor="@color/grisMasOscuro"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -55,15 +52,17 @@
                 android:id="@+id/txTiraPelo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#433E3E"
+                android:textColor="@color/grisOscuro"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5pt"
             android:background="@drawable/roundstyle">
 
             <TextView
@@ -71,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pAmigable"
-                android:textColor="#433E3E"
+                android:textColor="@color/grisMasOscuro"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -79,10 +78,27 @@
                 android:id="@+id/txAmigable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#433E3E"
+                android:textColor="@color/grisOscuro"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="15dp" />
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle">
+
+        <TextView
+            android:id="@+id/txInformacion"
+            android:text="@string/informacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/grisMasOscuro"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginVertical="10dp"/>
     </LinearLayout>
 
 </LinearLayout>

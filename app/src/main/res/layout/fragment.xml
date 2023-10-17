@@ -3,93 +3,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:background="@color/rosita">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5pt">
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/palabraRaza"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pRaza"
-                android:textColor="#433E3E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_marginBottom="5pt"
+                android:background="@drawable/roundstyle"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/txRaza"
+                <TextView
+                    android:id="@+id/palabraSexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pSexo"
+                    android:textColor="@color/grisMasOscuro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txSexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/grisOscuro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#433E3E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:orientation="horizontal"
+                android:layout_marginBottom="5pt">
+
+                <TextView
+                    android:id="@+id/palabraRaza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pRaza"
+                    android:textColor="@color/grisMasOscuro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txRaza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/grisOscuro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5pt"
+                android:background="@drawable/roundstyle"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/palabraFriendly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pFriendly"
+                    android:textColor="@color/grisMasOscuro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txFriendly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/grisOscuro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5pt"
-            android:background="@drawable/roundstyle"
-            android:orientation="horizontal">
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/palabraFriendly"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/pFriendly"
-                android:textColor="#433E3E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txFriendly"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btnFragmento"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:textColor="#433E3E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/beige"
+                android:text="@string/flechita"
+                android:textColor="#795548"
+                android:textSize="20sp">
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/roundstyle">
-
-            <TextView
-                android:id="@+id/palabraSexo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pSexo"
-                android:textColor="#433E3E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txSexo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#433E3E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+            </Button>
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnFragmento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text = "@string/flechita"
-        android:textSize="20sp">
-    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:id="@+id/txInformacion"
+            android:text="@string/informacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/grisMasOscuro"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
